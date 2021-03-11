@@ -9,6 +9,7 @@
   --text-color-white: #ffffff;
   --text-color-transparent: rgba(255, 255, 255, 0.6);
   --background-color-dark: #2f303a;
+  --background-color-hero: #C4C4C4;
   --background-color-light: #f5f4fa;
   --section-pt: 94px;
   --section-pb: 94px;
@@ -194,7 +195,7 @@ img {
   text-align: center; 
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--background-color-dark);
+  background-color: var(--background-color-hero);
 }
 
 .hero-title {
