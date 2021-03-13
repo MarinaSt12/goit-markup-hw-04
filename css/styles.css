@@ -9,7 +9,7 @@
   --text-color-white: #ffffff;
   --text-color-transparent: rgba(255, 255, 255, 0.6);
   --background-color-dark: #2f303a;
-  --background-color-hero: #C4C4C4;
+  --background-color-hero: #c4c4c4;
   --background-color-light: #f5f4fa;
   --section-pt: 94px;
   --section-pb: 94px;
@@ -59,7 +59,6 @@ img {
   overflow: hidden;
 }
 
-
 /* ============ COMPONENTS ============ */
 
 .container {
@@ -70,7 +69,7 @@ img {
 }
 
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .logo {
@@ -93,6 +92,36 @@ img {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 32px;
+  margin-right: 32px;
+  margin-top: 16px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover .social-list-icon
+.social-list-link:focus .social-list-icon {
+  fill: var(--accent-color);
+}
+
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  color: #AFB1B8;
 }
 
 /* ============ HEADER ============ */
@@ -121,7 +150,7 @@ img {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  
+
   color: var(--text-color-darkgrey);
 
   font-weight: 500;
@@ -192,17 +221,24 @@ img {
 /* ============ HERO ============ */
 
 .hero {
-  text-align: center; 
+  text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--background-color-hero);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/studio/bg-Img.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-title {
   margin: 0 auto;
   margin-bottom: 30px;
   max-width: 696px;
-  
+
   color: var(--text-color-white);
 
   font-weight: 900;
@@ -345,7 +381,8 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 /* ============ END TEAM ============ */
@@ -388,13 +425,6 @@ img {
 }
 
 /* ============ END FOOTER ============ */
-
-
-
-
-
-
-
 
 /* ++++++++++++ PORTFOLIO ++++++++++++ */
 .filters {
@@ -460,9 +490,9 @@ img {
 
 .project-list-content {
   padding: 20px 24px;
-  border-left: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .project-name {
