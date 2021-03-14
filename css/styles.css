@@ -512,7 +512,6 @@ img {
 }
 
 .footer-social-title {
-  /* margin-bottom: 20px; */
   color: var(--text-color-white);
 
   font-weight: 700;
@@ -527,8 +526,6 @@ img {
   justify-content: center;
   margin-top: 20px;
 }
-
-
 
 .footer-social-item:not(:last-child) {
   margin-right: 10px;
@@ -641,6 +638,5 @@ img {
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
-
 
 /* ============ END PROJECTS ============ */
