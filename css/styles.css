@@ -59,10 +59,6 @@ img {
   overflow: hidden;
 }
 
-a {
-  max-width: 100%;
-}
-
 /* ============ COMPONENTS ============ */
 
 .container {
@@ -118,37 +114,31 @@ a {
 }
 
 
+.social-list-icon {
+  fill: #AFB1B8;
+  /* fill: currentColor; */
+}
+
 .social-list-link:hover,
 .social-list-link:focus {
-  color: var(--secondary-font-color);
   background-color: var(--accent-color);
 }
 
-.social-list-icon {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
-}
-
-
-
-/* .social-list-link:hover .social-list-icon
+.social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: var(--accent-color);
+  fill: var(--text-color-white);
 }
 
-.social-list-icon {
-  width: 20px;
-  height: 20px;
-  fill: #AFB1B8;
-}
- */
 /* ============ HEADER ============ */
 
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.logo-light-theme {
+  color: var(--text-color-black);
 }
 
 .navigation {
@@ -187,6 +177,9 @@ a {
   color: var(--accent-color);
 }
 
+
+
+
 .contacts-list {
   display: flex;
   align-items: center;
@@ -198,45 +191,9 @@ a {
 }
 
 .contacts-item a {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  color: var(--text-color-grey);
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.contacts-email {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.contacts-email:hover,
-.contacts-email:focus {
-  color: var(--accent-color);
-}
-
-.email-icon {
-  width: 16px;
-  height: 12px;
-  fill: var(--text-color-grey);
-  margin-right: 10px;
-}
-
-.smartphone-icon {
-  width: 10px;
-  height: 16px;
-  fill: var(--text-color-grey);
-  margin-right: 10px;
-}
-
-.contacts-tel {
-  display: block;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -248,19 +205,37 @@ a {
   letter-spacing: 0.02em;
 }
 
-.contacts-email:hover,
-.contacts-email:focus {
+.contacts-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* display: block; */
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--text-color-grey);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-link:hover .contacts-icon,
+.contacts-link:focus .contacts-icon {
+  fill: var(--accent-color);
+}
+
+.contacts-link:focus,
+.contacts-link:hover {
   color: var(--accent-color);
 }
 
-.contacts-tel:hover,
-.contacts-tel:focus {
-  color: var(--accent-color);
+.contacts-icon {
+  fill: var(--text-color-grey);
+  margin-right: 10px;
 }
 
-.logo-light-theme {
-  color: var(--text-color-black);
-}
 
 /* ============ HERO ============ */
 
@@ -356,12 +331,20 @@ a {
   letter-spacing: 0.03em;
 }
 
-.advantages-icon {
-  width: 
-  height="
+.advantages-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background-color: var(--background-color-light);
+  border-radius: 4px;
+  margin-bottom: 30px;
 }
+
 /* ============ END ADVANTAGES ============ */
 
+  
 /* ============ SERVICES ============ */
 .services {
   padding-top: var(--section-pt);
@@ -453,6 +436,7 @@ a {
   margin-right: 30px;
 }
 
+
 .clients-link {
   display: flex;
   align-items: center;
@@ -460,7 +444,6 @@ a {
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
-  box-sizing: border-box;
   border-radius: 4px;
   color: #afb1b8;
 }
@@ -468,7 +451,11 @@ a {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
-  border-color: 1px solid var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.clients-icon {
+  fill: currentColor;
 }
 /* ============ END CLIENTS ============ */
 
